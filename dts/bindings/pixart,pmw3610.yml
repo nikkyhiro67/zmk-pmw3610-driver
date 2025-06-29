@@ -26,15 +26,3 @@ properties:
     type: boolean
   force-awake-4ms-mode:
     type: boolean
-
-  # scroll-layers:
-  #   type: int
-  #   required: false
-  #   description: |
-  #     Layer number to activate when scrolling is detected.
-
-  # automouse-layer:
-  #   type: int
-  #   required: false
-  #   description: |
-  #     Layer number to activate for automouse mode.
