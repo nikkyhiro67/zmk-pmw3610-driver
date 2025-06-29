@@ -120,6 +120,19 @@ enum pmw3610_attribute {
 
 };
 
+/* ========================================================================= */
+/* === Additions for scroll-layers / automouse-layer devicetree binding === */
+/* ========================================================================= */
+
+// struct pmw3610_config {
+//     ...
+//     // 追加: scroll-layers
+//     int scroll_layers;
+//
+//     // 追加: automouse-layer
+//     int automouse_layer;
+// };
+
 #ifdef __cplusplus
 }
 #endif
