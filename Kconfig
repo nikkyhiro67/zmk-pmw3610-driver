@@ -99,3 +99,53 @@ module-str = PMW3610
 source "${ZEPHYR_BASE}/subsys/logging/Kconfig.template.log_config"
 
 endif #PMW3610
+
+# --- 追加開始 ---
+config PMW3610_CPI
+  int "PMW3610 CPI setting"
+  default 400
+  help
+    Counts Per Inch (CPI) setting for PMW3610.
+
+config PMW3610_CPI_DIVIDOR
+  int "PMW3610 CPI divisor"
+  default 1
+  help
+    CPI divisor for PMW3610.
+
+config PMW3610_ORIENTATION_180
+  bool "PMW3610 180 degree orientation"
+  default n
+  help
+    Rotate PMW3610 orientation by 180 degrees.
+
+config PMW3610_SCROLL_TICK
+  int "PMW3610 scroll tick sensitivity"
+  default 16
+  help
+    Scroll tick value for PMW3610 scrolling.
+
+config PMW3610_POLLING_RATE_250
+  bool "PMW3610 polling rate 250Hz"
+  default n
+  help
+    Enable 250Hz polling rate for PMW3610.
+
+config PMW3610_AUTOMOUSE_TIMEOUT_MS
+  int "PMW3610 automouse timeout (ms)"
+  default 700
+  help
+    Timeout for automouse mode.
+
+config PMW3610_ADJUSTABLE_MOUSESPEED
+  bool "PMW3610 adjustable mouse speed"
+  default n
+  help
+    Enable adjustable mouse speed for PMW3610.
+
+config PMW3610_MOVEMENT_THRESHOLD
+  int "PMW3610 movement threshold"
+  default 5
+  help
+    Threshold to report movement for PMW3610.
+# --- 追加終了 ---
