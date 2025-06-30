@@ -15,6 +15,14 @@ menuconfig PMW3610
 
 if PMW3610
 
+# --- 追加開始 ---
+config PMW3610_INVERT_SCROLL_X
+  bool "Invert scroll direction on X axis"
+  default n
+  help
+    Invert the scroll direction for the X axis when using PMW3610.
+# --- 追加終了 ---
+
 config INPUT_PMW3610_INIT_PRIORITY
     int "PMW3610 initialization priority"
     default INPUT_INIT_PRIORITY
